@@ -4,7 +4,7 @@ CutDetective is a Python script designed for Nuke that automates the detection o
 ## Installation Instructions for CutDetective Script
 
 CutDetective relies on the PySceneDetect library for scene detection. You need to install it using pip:
-**pip install PySceneDetect**
+**pip install scenedetect**
 
 Place the cutdetective.py script in your .nuke directory or any directory of your choice.
 To ensure the script loads automatically when you start Nuke, add the following line to your **.nuke/menu.py file**:
