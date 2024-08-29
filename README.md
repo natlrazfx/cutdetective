@@ -7,9 +7,7 @@ CutDetective relies on the PySceneDetect library for scene detection. You need t
 **pip install scenedetect**
 
 Place the cutdetective.py script in your .nuke directory or any directory of your choice.
-To ensure the script loads automatically when you start Nuke, add the following line to your **.nuke/menu.py file**:
-**nuke.pluginAddPath('path_to_cutdetective_directory')**
-Replace path_to_cutdetective_directory with the actual path where cutdetective.py is located.
+You can run the script through the Script Editor, bind it to a hotkey, or (recommended) add it to your w_hotbox for quick access.
 
 In Nuke, select a Read node that contains your video file.
 Run the script through the Nuke interface, and it will prompt you to set the sensitivity for scene detection.
