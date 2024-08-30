@@ -4,15 +4,19 @@ CutDetective is a Python script designed for Nuke that automates the detection o
 ## Installation Instructions for CutDetective Script
 
 CutDetective relies on the PySceneDetect library for scene detection. You need to install it using pip:
-**pip install scenedetect**
+**pip install --upgrade scenedetect[opencv]**
 
 **Requires ffmpeg/mkvmerge for video splitting support. Windows builds (MSI installer/portable ZIP) can be found [on the download page](https://www.scenedetect.com/download/)**
 
 Place the cutdetective.py script in your .nuke directory or any directory of your choice.
 You can run the script through the Script Editor, bind it to a hotkey, or (recommended) add it to your w_hotbox for quick access.
 
+To run it from the Script Editor, remove the run_scene_detection() line from the script. Insert the following into your menu.py:
+**import cutdetective
+nuke.menu("Nuke").addCommand('Time/Cutdetective', 'cutdetective.run_scene_detection()')**
+
 In Nuke, select a Read node that contains your video file.
-Run the script through the Nuke interface, and it will prompt you to set the sensitivity for scene detection.
+It will prompt you to set the sensitivity for scene detection.
 
 *Note: 
 By default, it's set to 30, which usually works pretty well. If you want to experiment, you can adjust the value higher or lower. Increasing the sensitivity value detects more subtle changes and might result in more cuts, while lowering it could miss some scene changes.*
