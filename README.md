@@ -6,7 +6,8 @@ CutDetective is a Python script designed for Nuke that automates the detection o
 CutDetective relies on the PySceneDetect library for scene detection. You need to install it using pip:
 **pip install --upgrade scenedetect[opencv]**
 
-**Requires ffmpeg/mkvmerge for video splitting support. Windows builds (MSI installer/portable ZIP) can be found [on the download page](https://www.scenedetect.com/download/)**
+**it's recommended to familiarize yourself with the PySceneDetect library. This library provides detailed documentation on how scene detection works and the various parameters available for configuration. Understanding this will help you get the most out of the Cut Detective Studio script and optimize it for your specific workflow.
+You can find more information and documentation for PySceneDetect here [PySceneDetect Documentatione](https://www.scenedetect.com/download/)**
 
 Place the cutdetective.py script in your .nuke directory or any directory of your choice.
 You can run the script through the Script Editor, bind it to a hotkey, or (recommended) add it to your w_hotbox for quick access.
