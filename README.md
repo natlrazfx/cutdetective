@@ -7,7 +7,7 @@ CutDetective relies on the PySceneDetect library for scene detection. You need t
 **pip install --upgrade scenedetect[opencv]**
 
 **it's recommended to familiarize yourself with the PySceneDetect library. This library provides detailed documentation on how scene detection works and the various parameters available for configuration. Understanding this will help you get the most out of the Cut Detective Studio script and optimize it for your specific workflow.
-You can find more information and documentation for PySceneDetect here [PySceneDetect Documentatione](https://www.scenedetect.com/download/)**
+You can find more information and documentation for PySceneDetect here [PySceneDetect Documentation](https://www.scenedetect.com/download/)**
 
 Place the cutdetective.py script in your .nuke directory or any directory of your choice.
 You can run the script through the Script Editor, bind it to a hotkey, or (recommended) add it to your w_hotbox for quick access.
